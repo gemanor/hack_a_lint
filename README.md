@@ -11,4 +11,8 @@ This repo is sample code of PyCon talk
 The `.vscode` folder include both VSCode config files
 * `settings.json` config all chekcers to work with pylint
 * `launch.json` contain debug config for all linters
-`.env` must be configured and contain `PYTHONPATH=.`
+
+The best way to make the script works is:
+1. Use `virtualenvs` to create `venv` on workspace dir
+2. Run `pip install -r requirements.txt` after activate env
+3. Create `.env` file on workspace folder with right PYTHONPATH (following should contain `PYTHONPATH=.`)
