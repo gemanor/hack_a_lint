@@ -7,7 +7,7 @@ class RedundantClassChecker(BaseChecker):
     """
     Checker for redundant class
     """
-    name = "redundant_class_cheker.py"
+    name = "redundant_class_cheker"
     msgs = {
         "W2501": (
             "Missing init function, class should not be used",

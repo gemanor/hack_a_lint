@@ -8,6 +8,8 @@ class Handler:
     """
       Github handler class
     """
+    def __init__(self) -> None:
+        pass
     host = 'string'
     """
       Github Action Handlers
