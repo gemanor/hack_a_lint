@@ -3,11 +3,11 @@ from tokenize import OP, AT, NEWLINE, STRING
 from pylint.checkers import BaseTokenChecker
 
 
-class RBACRoleInspectionChecker(BaseTokenChecker):
+class AuthorizationChecker(BaseTokenChecker):
     """
     This class is a pylint checker for if usage in same expression many times.
     """
-    name = "rbac_role_inspection"
+    name = "authorization_checker"
     msgs = {
         "W2406": (
             "Authorizer with `all` should be used with caution and only from inpected code.",
@@ -36,4 +36,4 @@ def register(linter):
     """
     register checker to pylint
     """
-    linter.register_checker(RBACRoleInspectionChecker(linter))
+    linter.register_checker(AuthorizationChecker(linter))
